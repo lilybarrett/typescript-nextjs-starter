@@ -1,0 +1,1 @@
+## TypeScript NextJS starter
