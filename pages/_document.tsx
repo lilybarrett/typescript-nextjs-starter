@@ -16,6 +16,10 @@ export default class MyDocument extends Document {
             <html>
                 <Head>
                     <title>TypeScript React GraphQL Client</title>
+                    <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
+                    <link rel="stylesheet" href="/static/css/reset.css" />
+                    <link rel="stylesheet" href="/static/css/bootstrap-grid.css" />
+                    <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet"/>
                     {this.props.styleTags}
                 </Head>
                 <body>
