@@ -1,12 +1,12 @@
+import * as express from "express";
 import * as next from "next";
-import * as Express from "express";
-import "reflect-metadata";
-import routes from "./routes";
+import router from "./routes";
 
-const app = next({dev: process.env.NODE_ENV !== "production"});
-const handler = routes.getRequestHandler(app);
+const app = next({ dev: process.env.NODE_ENV !== "production" });
+const server = express();
+const handle = router.getRequestHandler(app);
 
-const express = Express();
-app.prepare().then( () => {
-    express.use(handler).listen(8080);
+app.prepare().then(() => {
+    server.get("*", (req, res) => handle(req, res));
+    server.listen(8080);
 });
