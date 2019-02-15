@@ -1,9 +1,29 @@
 {
     "compilerOptions": {
-        "jsx": "react",
         "target": "es2017",
         "module": "commonjs",
-        "skipLibCheck": true,
+        "outDir": "dist",
+        "jsx": "preserve",
+        "moduleResolution": "node",
+        "removeComments": true,
+        "sourceMap": true,
+        "noUnusedLocals": true,
+        "strict": true,
+        "baseUrl": ".",
+        "typeRoots": [
+            "./node_modules/@types/",
+            "**/types/**/*.d.ts"
+        ],
+        "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
+        "allowJs": true,
+        "lib": [
+            "es2017",
+            "dom"
+        ]
     },
+    "exclude": [
+        "**/node_modules",
+        "**/__tests__"
+    ]
 }
