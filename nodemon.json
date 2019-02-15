@@ -1,0 +1,4 @@
+{
+    "watch": ["server/**/*.ts"],
+    "exec": "ts-node --project tsconfig.json server/index.ts"
+  }
