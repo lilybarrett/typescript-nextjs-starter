@@ -58,6 +58,15 @@ typings/
 .env
 
 .DS_Store
-*.js
-*.js.map
-.next/
+.next
+.vscode
+server/*.js
+server/*.js.map
+pages/*.js
+pages/*.map
+pages/**/*.js
+pages/**/*.map
+components/**/*.js
+components/*.js
+components/**/*.map
+components/*.map
